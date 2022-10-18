@@ -20,6 +20,7 @@
     color: #1f343e;
     opacity: 1;
   }
+
   .error {
     font: normal normal normal 12px/24px Noto Sans;
     letter-spacing: 0px;
@@ -81,9 +82,47 @@
       opacity: 1;
       width: 100%;
       margin-top: 15px;
+      cursor: pointer;
     }
   }
+  .copyBtn {
+    input {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      opacity: 1;
+      padding: 20px 10px 20px 10px;
+      width: 60%;
+      font-size: 17px;
+      float: left;
+    }
+    button {
+      background: #4eb3e3 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      opacity: 1;
+      padding: 14px;
+      text-align: center;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
 
+      width: 25%;
+      font: normal normal bold 17px/32px Noto Sans;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      cursor: pointer;
+    }
+    .referAgain {
+      text-align: center;
+      color: rgb(105, 105, 105);
+      cursor: pointer;
+      margin-top: 2rem;
+      :hover {
+        color: #000;
+      }
+    }
+  }
   div.formFooter {
     text-align: left;
     font: normal normal normal 16px/32px Noto Sans;
