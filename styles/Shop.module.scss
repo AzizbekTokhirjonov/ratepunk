@@ -1,0 +1,111 @@
+$content-width: 1200px;
+
+.container {
+  background: #45565e 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  opacity: 1;
+  .content {
+    width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .app {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #1f343e;
+      border-radius: 16px;
+      opacity: 1;
+      padding: 10px 5rem 10px 10px;
+      margin: 20px 10px 20px;
+      font: normal normal normal 16px/16px Noto Sans;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      .text {
+        margin-left: 10px;
+        span {
+          font: normal normal bold 20px/16px Gadugi;
+          letter-spacing: 0px;
+          color: #f8f4f9;
+        }
+      }
+    }
+    .review {
+      font: normal normal normal 20px/24px Noto Sans;
+      letter-spacing: 0px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      .stars {
+        margin: 0 20px 0 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    .content {
+      width: 93%;
+      .app {
+        padding: 6px 3rem 6px 10px;
+        font: normal normal normal 14px/16px Noto Sans;
+        .text {
+          span {
+            font: normal normal bold 16px/16px Gadugi;
+          }
+        }
+      }
+      .review {
+        font: normal normal normal 16px/24px Noto Sans;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    .content {
+      width: auto;
+      .app {
+        padding: 6px 3rem 6px 10px;
+        font: normal normal normal 14px/16px Noto Sans;
+        .text {
+          span {
+            font: normal normal bold 16px/16px Gadugi;
+          }
+        }
+      }
+      .review {
+        flex-direction: column;
+        text-align: left;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 766px) {
+  .container {
+    .content {
+      width: auto;
+      flex-direction: column;
+      margin: 20px 0;
+      .app {
+        justify-content: center;
+
+        width: 80%;
+        padding: 6px 3rem 6px 10px;
+        font: normal normal normal 14px/16px Noto Sans;
+        .text {
+          span {
+            font: normal normal bold 16px/16px Gadugi;
+          }
+        }
+      }
+      .review {
+        font: normal normal normal 16px/24px Noto Sans;
+        flex-direction: row;
+      }
+    }
+  }
+}

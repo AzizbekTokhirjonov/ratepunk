@@ -1,0 +1,162 @@
+.container {
+  .step,
+  .step2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    .image,
+    .text {
+      margin-left: 3rem;
+      .stepTitle {
+        font: normal normal bold 20px/32px Noto Sans;
+        letter-spacing: 1.6px;
+        color: #4eb3e3;
+        text-transform: uppercase;
+        opacity: 1;
+        margin-bottom: 15px;
+      }
+      .title {
+        text-align: left;
+        font: normal normal normal 32px/48px Caveat Brush;
+        letter-spacing: 0px;
+        color: #1f343e;
+        text-transform: uppercase;
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      .paragraph {
+        font: normal normal normal 20px/32px Noto Sans;
+        letter-spacing: 0px;
+        color: #1f343e;
+        opacity: 1;
+      }
+    }
+  }
+  .step:last-child {
+    .text {
+      width: 70%;
+    }
+  }
+  .step2 {
+    .image {
+      text-align: left;
+      margin-left: -1rem;
+    }
+    .text {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 400px;
+
+    .step,
+    .step2 {
+      margin-left: 0rem;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .text {
+        width: 70%;
+      }
+      .image {
+        width: 30%;
+      }
+      .image,
+      .text {
+        margin-left: 3rem;
+        .stepTitle {
+          font: normal normal bold 16px/32px Noto Sans;
+        }
+        .title {
+          font: normal normal normal 20px/48px Caveat Brush;
+        }
+        .paragraph {
+          font: normal normal normal 16px/32px Noto Sans;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 350px;
+
+    .step,
+    .step2 {
+      margin-left: 0rem;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .text {
+        width: 70%;
+      }
+      .image {
+        width: 30%;
+      }
+      .image,
+      .text {
+        margin-left: -rem;
+        .stepTitle {
+          font: normal normal bold 16px/32px Noto Sans;
+        }
+        .title {
+          font: normal normal normal 20px/48px Caveat Brush;
+        }
+        .paragraph {
+          font: normal normal normal 16px/32px Noto Sans;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    .step,
+    .step2 {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 2rem;
+      justify-content: flex-start;
+      margin-left: -2rem;
+      .text {
+        width: 90%;
+        .title {
+          text-align: center;
+        }
+      }
+      .image {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .step2 {
+      flex-direction: column-reverse;
+      .image {
+        order: 2;
+      }
+      .text {
+        order: 1;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

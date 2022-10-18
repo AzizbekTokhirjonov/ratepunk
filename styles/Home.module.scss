@@ -1,0 +1,52 @@
+$content-width: 1200px;
+.mainContainer {
+  background: #f8cc5d 0% 0% no-repeat padding-box;
+  width: 100%;
+  margin: 0 auto;
+  .content {
+    max-width: $content-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .emailForm {
+    padding: 50px 50px 50px 0px;
+    margin-right: 4rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .mainContainer {
+    .content {
+      width: auto;
+      .emailForm {
+        padding: 50px 10px 50px 0px;
+        margin-right: 0rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .mainContainer {
+    margin: 0;
+    .content {
+      justify-content: center;
+      .emailForm {
+        padding: 50px 20px 50px 0px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .mainContainer {
+    .content {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      .emailForm {
+        padding: 50px 0px 50px 0px;
+      }
+    }
+  }
+}

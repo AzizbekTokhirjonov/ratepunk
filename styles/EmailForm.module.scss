@@ -1,0 +1,182 @@
+.container {
+  background: #f8f4f9 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-radius: 16px;
+  opacity: 1;
+  width: 400px;
+  padding: 50px 60px 60px;
+  h1 {
+    text-align: left;
+    font: normal normal normal 48px/72px Caveat Brush;
+    letter-spacing: 0px;
+    color: #1f343e;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  p {
+    text-align: left;
+    font: normal normal normal 20px/32px Noto Sans;
+    letter-spacing: 0px;
+    color: #1f343e;
+    opacity: 1;
+  }
+  .error {
+    font: normal normal normal 12px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #ed6f82;
+    opacity: 1;
+    margin: 10px 0;
+  }
+  .success {
+    font: normal normal bold 16px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #1f343e;
+    opacity: 1;
+    margin: 10px 0;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .inputGroup {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    #input {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      border-radius: 8px;
+      opacity: 1;
+      width: 85%;
+      padding: 20px 10px 20px 3rem;
+      font-size: 17px;
+      float: left;
+    }
+    input::placeholder {
+      text-align: left;
+      font: normal normal normal 17px/20px Noto Sans;
+      letter-spacing: 0px;
+      color: #6d7a80;
+      opacity: 1;
+      padding: 10px;
+    }
+    input:focus {
+      outline: none;
+    }
+    .image {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+    }
+    button {
+      background: #4eb3e3 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      opacity: 1;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      font: normal normal bold 17px/32px Noto Sans;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  div.formFooter {
+    text-align: left;
+    font: normal normal normal 16px/32px Noto Sans;
+    letter-spacing: 0px;
+    color: #6d7a80;
+    opacity: 1;
+    margin-top: 7rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 350px;
+    padding: 50px 50px 60px;
+
+    h1 {
+      font: normal normal normal 35px/72px Caveat Brush;
+    }
+    p {
+      font: normal normal normal 18px/32px Noto Sans;
+    }
+    .inputGroup {
+      #input {
+        font-size: 15px;
+        padding: 15px 10px 15px 3rem;
+        width: 83%;
+      }
+      input::placeholder {
+        font: normal normal normal 15px/20px Noto Sans;
+      }
+      .image {
+        top: 15px;
+      }
+      button {
+        font: normal normal bold 15px/32px Noto Sans;
+        padding: 10px;
+      }
+    }
+    div.formFooter {
+      font: normal normal normal 13px/32px Noto Sans;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 350px;
+    padding: 50px 30px 60px;
+
+    h1 {
+      font: normal normal normal 30px/72px Caveat Brush;
+    }
+    p {
+      font: normal normal normal 16px/32px Noto Sans;
+    }
+    .inputGroup {
+      input::placeholder {
+        font: normal normal normal 14px/20px Noto Sans;
+      }
+      button {
+        font: normal normal bold 14px/32px Noto Sans;
+        padding: 10px;
+      }
+    }
+    div.formFooter {
+      font: normal normal normal 12px/32px Noto Sans;
+    }
+  }
+}
+@media only screen and (max-width: 820px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    .inputGroup {
+      #input {
+        width: 89%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    .inputGroup {
+      #input {
+        width: 82%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    .inputGroup {
+      #input {
+        width: 80%;
+      }
+    }
+  }
+}
