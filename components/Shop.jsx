@@ -12,6 +12,7 @@ const Shop = () => {
             <a
               href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={chrome} alt="chrome logo" width={60} height={50} />
             </a>
@@ -25,6 +26,7 @@ const Shop = () => {
             <a
               href="https://apps.apple.com/app/ratepunk/id1607823726"
               target="_blank"
+              rel="noreferrer"
             >
               <Image src={apple} alt="apple logo" width={60} height={50} />
             </a>{" "}

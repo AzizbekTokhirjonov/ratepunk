@@ -55,8 +55,8 @@ const Footer = () => {
               <h4>Social</h4>
               <div className={styles.icons}>
                 <ul>
-                  {socialSites.map((social) => (
-                    <li>
+                  {socialSites.map((social, i) => (
+                    <li key={i}>
                       <Image
                         src={social}
                         alt="social logo"
