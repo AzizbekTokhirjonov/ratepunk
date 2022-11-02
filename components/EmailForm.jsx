@@ -3,7 +3,7 @@ import styles from "../styles/EmailForm.module.scss";
 import Image from "next/image";
 import emailLogo from "../public/assets/email.svg";
 import successLogo from "../public/assets/success.svg";
-const X_MASTER_KEY = "$2b$10$uhP" + process.env.NEXT_PUBLIC_API_KEY;
+const X_MASTER_KEY = "$2b$10$uhP" + process.env.z;
 const BIN_ID = process.env.NEXT_PUBLIC_BIN_ID;
 
 const EmailForm = () => {
